@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "singleeTestLib"
-  s.version      = "0.1.0"
+  s.version      = "1.0"
   s.summary      = "第一个test库"
 
   # This description is used to generate tags and improve search results.
