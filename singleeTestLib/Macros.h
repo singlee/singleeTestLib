@@ -38,7 +38,7 @@
 
 #define hexColorA(rgbValue,a) [UIColor colorWithRed:((float)(((rgbValue) & 0xFF0000) >> 16))/255.0 green:((float)(((rgbValue) & 0xFF00)>>8))/255.0 blue: ((float)((rgbValue) & 0xFF))/255.0 alpha:(a)]
 
-#define hexColor(hex) HexColorA(hex,1.0f)
+#define hexColor(hex) hexColorA(hex,1.0f)
 
 
 /**
@@ -73,13 +73,13 @@ return __singleton__;                          \
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([kSystemVersion compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 // 是否大于等于IOS7
-#define isIOS7                  ([systemVersionF >= 7.0)
+#define isIOS7                  (kSystemVersionF >= 7.0)
 // 是否大于等于IOS8
-#define isIOS8                  ([systemVersionF >=8.0)
+#define isIOS8                  (kSystemVersionF >=8.0)
 // 是否大于IOS9
-#define isIOS9                  ([systemVersionF >=9.0)
+#define isIOS9                  (kSystemVersionF >=9.0)
 // 是否大于等于某个版本
-#define isIOS(version)          ([systemVersionF >= (version))
+#define isIOS(version)          (kSystemVersionF >= (version))
 
 
 /**
